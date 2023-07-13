@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    background-color: blueviolet;
     display: flex;
     font-size: 1.5rem;
     min-height: 100vh;
@@ -11,7 +12,9 @@ body{
     justify-content: center;
 }
 .wrapper{
-    max-width: 400px;
+    background-color: antiquewhite;
+    border: 2px solid red;
+    /* max-width: 400px; */
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -42,11 +45,12 @@ body{
 }
 button{
     padding: 0.6rem;
-    font-size: 16px;
+    font-size: 24px;
     border-radius: 0.2rem;
     border: none;
     background-color: black;
     color: white;
+    margin-top: 1rem;
 }
 .output-div{
     margin-top: 3rem;
@@ -80,4 +84,7 @@ button{
 }
 p{
         margin-top: 0.4rem;
+}
+span{
+    font-weight: bold;
 }

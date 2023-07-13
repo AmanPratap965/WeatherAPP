@@ -26,12 +26,12 @@ WeatherData = (city) => {
 	.then(data=>{
 		console.log(data);
 		//printing the city Name
-		cityName.innerText=city;
+		cityName.innerText=data.location.name;
 		//printing the weather conditions
 		dayWeather.innerHTML=` <h5 id="day">${data.current.condition.text}</h5><img src='${data.current.condition.icon}'> `
 		temperature.innerText="Temp: "+data.current.temp_c+"℃";
 		wind.innerText="Wind: "+data.current.wind_kph+"kph";		
-		precipitation.innerText="Precipitation: "+data.current.precip_mm+"mm";
+		precipitation.innerText="Rainfall: "+data.current.precip_mm+"mm";
 
 	})
 	.catch(err=>console.log(err));
